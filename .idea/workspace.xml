@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e11fce30-1a7d-4636-a107-c9ecc79be8d6" name="Default Changelist" comment="111">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/produce/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/produce/MyConsumerFactoryListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/produce/MyProducerFactoryListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/produce/KafkaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/produce/KafkaConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/produce/KafkaConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/produce/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/produce/MyConsumerFactoryListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/produce/MyProducerFactoryListener.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -19,33 +21,28 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/study/produce/KafkaConfig.java">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2498#2499#0" expanded="true" />
-                <element signature="e#2557#2558#0" expanded="true" />
-                <element signature="e#3197#3198#0" expanded="true" />
-                <element signature="e#3240#3241#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="720">
+              <caret line="24" column="10" lean-forward="true" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/study/produce/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="150">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properies">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -73,12 +70,16 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/study/produce/ProduceConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/study/produce/MyProducerFactoryListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/study/produce/MyConsumerFactoryListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/study/produce/MyListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/study/produce/Main.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/study/produce/MyProducerFactoryListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/study/produce/KafkaConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/study/produce/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/study/produce/SyncSend.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/study/produce/ProducerFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/produce/ProducerFactory.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/Application.java" />
       </list>
     </option>
   </component>
@@ -87,7 +88,16 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Profiles" type="6783ec58:MavenProjectsStructure$ProfilesNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="kafka-spring-study" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="kafka-spring-study" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
@@ -98,17 +108,17 @@
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="kafka-spring-study" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-          <item name="org.springframework.kafka:spring-kafka:2.6.2" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
+          <item name="org.apache.kafka:kafka-clients:2.6.0" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
         </path>
       </expand>
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="20" />
-    <option name="y" value="40" />
-    <option name="width" value="2520" />
-    <option name="height" value="1440" />
+    <option name="x" value="386" />
+    <option name="y" value="16" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -116,59 +126,68 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="kafkaspringstudy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kafkaspringstudy" type="462c0819:PsiDirectoryNode" />
+              <item name="kafka-spring-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kafka-spring-study" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="kafkaspringstudy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kafkaspringstudy" type="462c0819:PsiDirectoryNode" />
+              <item name="kafka-spring-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kafka-spring-study" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="kafkaspringstudy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kafkaspringstudy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kafkaspringstudy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kafkaspringstudy" type="462c0819:PsiDirectoryNode" />
+              <item name="kafka-spring-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kafka-spring-study" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="kafkaspringstudy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kafkaspringstudy" type="462c0819:PsiDirectoryNode" />
+              <item name="kafka-spring-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kafka-spring-study" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="produce" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kafka-spring-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kafka-spring-study" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kafka-spring-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1603066110185" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1603109546323" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../spring" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.study.produce" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -182,26 +201,6 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.study.produce.Main" />
-      <module name="kafkaspringstudy" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.study.produce.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Main" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -213,45 +212,48 @@
       <option name="presentableId" value="Default" />
       <updated>1602858322708</updated>
       <workItem from="1602858325878" duration="11037000" />
+      <workItem from="1603107786983" duration="22000" />
+      <workItem from="1603108772545" duration="784000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11037000" />
+    <option name="totallyTimeSpent" value="14103000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1293" height="773" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Designer" />
-      <window_info id="Image Layers" />
-      <window_info id="Capture Tool" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24939272" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1913646" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Spring" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Messages" weight="0.32866043" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Image Layers" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32866043" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3286334" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39875388" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Maven" weight="0.32955465" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.329718" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.3286334" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.32942432" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,13 +274,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/java/JDK1.8/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-918">
-          <caret line="263" column="32" selection-start-line="263" selection-start-column="32" selection-end-line="263" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://D:/java/JDK1.8/src.zip!/java/lang/Thread.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/kafka/spring-kafka/2.6.2/spring-kafka-2.6.2.jar!/org/springframework/kafka/core/ProducerFactory.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="305">
@@ -300,33 +296,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/study/produce/MyConsumerFactoryListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="21" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/study/produce/MyProducerFactoryListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="26" lean-forward="true" selection-start-column="26" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/java/JDK1.8/src.zip!/java/util/concurrent/Future.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="150" column="6" selection-start-line="150" selection-start-column="6" selection-end-line="150" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/study/produce/MyConsumerFactoryListener.java" />
+    <entry file="jar://D:/java/JDK1.8/src.zip!/java/util/concurrent/Future.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/kafka/spring-kafka/2.6.2/spring-kafka-2.6.2.jar!/org/springframework/kafka/core/KafkaTemplate.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="205">
@@ -348,30 +319,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/study/produce/MyListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/java/JDK1.8/src.zip!/java/util/Properties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="121" column="6" selection-start-line="121" selection-start-column="6" selection-end-line="121" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/study/produce/MyListener.java" />
+    <entry file="file://$PROJECT_DIR$/.gitignore" />
+    <entry file="jar://D:/java/JDK1.8/src.zip!/java/util/Properties.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/kafka/spring-kafka/2.6.2/spring-kafka-2.6.2.jar!/org/springframework/kafka/core/DefaultKafkaConsumerFactory.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="367">
@@ -438,34 +388,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/study/produce/MyProducerFactoryListener.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/study/produce/KafkaConfig.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/study/produce/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/produce/SyncSend.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/produce/ProducerFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="20" selection-start-column="20" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properies">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/study/produce/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/study/produce/KafkaConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2498#2499#0" expanded="true" />
-            <element signature="e#2557#2558#0" expanded="true" />
-            <element signature="e#3197#3198#0" expanded="true" />
-            <element signature="e#3240#3241#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="720">
+          <caret line="24" column="10" lean-forward="true" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -521,7 +477,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>kafkaspringstudy</last-edited>
+          <last-edited>kafka-spring-study</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
