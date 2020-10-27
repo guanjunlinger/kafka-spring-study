@@ -16,7 +16,7 @@ public class SendMessageController {
 
     @GetMapping("/send")
     public String send(String params) {
-        kafkaTemplate.send(topic, params);
+        kafkaTemplate.sendDefault(topic, params);
         return "success";
     }
 

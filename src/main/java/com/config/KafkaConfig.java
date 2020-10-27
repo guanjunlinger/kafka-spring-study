@@ -1,29 +1,29 @@
 package com.config;
 
-
-import org.springframework.boot.autoconfigure.kafka.KafkaProperties;
+import com.handler.MyRecordInterceptor;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.kafka.core.*;
+import org.springframework.kafka.listener.RecordInterceptor;
+import org.springframework.kafka.support.ProducerListener;
+import org.springframework.stereotype.Component;
 
-@Configuration
+@Component
 public class KafkaConfig {
 
+//    @Bean(name = "topic1")
+//    public NewTopic topic() {
+//        return TopicBuilder.name("topic1")
+//                .partitions(1)
+//                .replicas(1)
+//                .build();
+//    }
+
     @Bean
-    public ProducerFactory<String, String> producerFactory(KafkaProperties kafkaProperties) {
-        return new DefaultKafkaProducerFactory<>(kafkaProperties.buildProducerProperties());
+    ProducerListener producerListener() {
+        return new MyProducerListener();
     }
 
     @Bean
-    public ConsumerFactory<String, String> consumerFactory(KafkaProperties kafkaProperties) {
-        return new DefaultKafkaConsumerFactory<>(kafkaProperties.buildConsumerProperties());
+    public RecordInterceptor RecordInterceptor() {
+        return new MyRecordInterceptor();
     }
-
-
-    @Bean
-    public KafkaTemplate<String, String> kafkaTemplate(ProducerFactory<String, String> producerFactory) {
-        return new KafkaTemplate<>(producerFactory);
-    }
-
-
 }
