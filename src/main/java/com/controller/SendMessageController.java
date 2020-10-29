@@ -20,4 +20,10 @@ public class SendMessageController {
         return "success";
     }
 
+    @GetMapping("/send/handler")
+    public String sendKafkaHandler(String params) {
+        kafkaTemplate.send("test-topic", params);
+        return "success";
+    }
+
 }
