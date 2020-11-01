@@ -1,20 +1,27 @@
 package com.config;
 
 import com.handler.MyRecordInterceptor;
+import org.apache.kafka.clients.consumer.ConsumerRecord;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.kafka.ConcurrentKafkaListenerContainerFactoryConfigurer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.kafka.config.ConcurrentKafkaListenerContainerFactory;
 import org.springframework.kafka.core.ConsumerFactory;
 import org.springframework.kafka.listener.RecordInterceptor;
+import org.springframework.kafka.listener.SeekToCurrentErrorHandler;
 import org.springframework.kafka.support.ProducerListener;
 import org.springframework.stereotype.Component;
+import org.springframework.util.backoff.FixedBackOff;
 
 @Component
 public class KafkaConfig {
+
+
     @Bean
     ProducerListener producerListener() {
         return new MyProducerListener();
     }
+
 
     @Bean
     public RecordInterceptor RecordInterceptor() {
@@ -26,6 +33,18 @@ public class KafkaConfig {
         ConcurrentKafkaListenerContainerFactory<Object, Object> factory = new ConcurrentKafkaListenerContainerFactory();
         configurer.configure(factory, kafkaConsumerFactory);
         factory.setRecordFilterStrategy(new MyRecordFilterStrategy());
+        factory.setStatefulRetry(true);
+        factory.setRecoveryCallback(context -> {
+            ConsumerRecord<?, ?> consumerRecord = (ConsumerRecord<?, ?>) context.getAttribute("record");
+            Exception e = (Exception) context.getLastThrowable();
+            System.out.println(e);
+            return consumerRecord;
+        });
         return factory;
+    }
+
+    @Bean
+    public SeekToCurrentErrorHandler eh() {
+        return new SeekToCurrentErrorHandler(new FixedBackOff(0L, 3L));
     }
 }
