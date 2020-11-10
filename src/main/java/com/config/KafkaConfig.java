@@ -2,11 +2,11 @@ package com.config;
 
 import com.handler.MyRecordInterceptor;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.kafka.ConcurrentKafkaListenerContainerFactoryConfigurer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.kafka.config.ConcurrentKafkaListenerContainerFactory;
 import org.springframework.kafka.core.ConsumerFactory;
+import org.springframework.kafka.listener.ErrorHandler;
 import org.springframework.kafka.listener.RecordInterceptor;
 import org.springframework.kafka.listener.SeekToCurrentErrorHandler;
 import org.springframework.kafka.support.ProducerListener;
@@ -44,7 +44,7 @@ public class KafkaConfig {
     }
 
     @Bean
-    public SeekToCurrentErrorHandler eh() {
+    public ErrorHandler eh() {
         return new SeekToCurrentErrorHandler(new FixedBackOff(0L, 3L));
     }
 }
