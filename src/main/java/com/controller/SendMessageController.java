@@ -12,17 +12,17 @@ public class SendMessageController {
     @Autowired
     private KafkaTemplate<String, String> kafkaTemplate;
 
-    private String topic = "my-topic";
-
     @GetMapping("/send")
     public String send(String params) {
-        kafkaTemplate.sendDefault(topic, params);
+        kafkaTemplate.executeInTransaction(
+                (operations) -> operations.sendDefault(params));
         return "success";
     }
 
     @GetMapping("/send/handler")
     public String sendKafkaHandler(String params) {
-        kafkaTemplate.send("test-topic", params);
+        kafkaTemplate.executeInTransaction(
+                (operations) -> operations.send("test-topic", params));
         return "success";
     }
 

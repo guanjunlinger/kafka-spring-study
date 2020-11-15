@@ -7,7 +7,7 @@ import org.springframework.kafka.config.ConcurrentKafkaListenerContainerFactory;
 import org.springframework.kafka.core.ConsumerFactory;
 import org.springframework.kafka.listener.RecordInterceptor;
 import org.springframework.kafka.support.ProducerListener;
-import org.springframework.retry.support.RetryTemplate;
+import org.springframework.kafka.transaction.KafkaTransactionManager;
 import org.springframework.stereotype.Component;
 
 
@@ -28,12 +28,17 @@ public class KafkaConfig {
 
     @Bean
     ConcurrentKafkaListenerContainerFactory<?, ?> kafkaListenerContainerFactory(
-            ConcurrentKafkaListenerContainerFactoryConfigurer configurer, ConsumerFactory<Object, Object> kafkaConsumerFactory) {
+            ConcurrentKafkaListenerContainerFactoryConfigurer configurer,
+            ConsumerFactory<Object, Object> kafkaConsumerFactory,
+            KafkaTransactionManager kafkaTransactionManager) {
         ConcurrentKafkaListenerContainerFactory<Object, Object> factory = new ConcurrentKafkaListenerContainerFactory();
         configurer.configure(factory, kafkaConsumerFactory);
         factory.setRecordFilterStrategy(new MyRecordFilterStrategy());
         factory.setRecoveryCallback(new MyRecoveryCallback());
-        factory.setRetryTemplate(new RetryTemplate());
+        factory.setBatchListener(true);
+        factory.setBatchToRecordAdapter(new MyBatchToRecordAdapter<>());
+
+        factory.getContainerProperties().setTransactionManager(kafkaTransactionManager);
         return factory;
     }
 

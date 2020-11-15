@@ -8,6 +8,6 @@ public class MyRecordFilterStrategy implements RecordFilterStrategy {
     @Override
     public boolean filter(ConsumerRecord consumerRecord) {
         System.out.println("ThreadId:" + Thread.currentThread().getId() + "开始过滤消息:" + consumerRecord);
-        return true;
+        return false;
     }
 }
