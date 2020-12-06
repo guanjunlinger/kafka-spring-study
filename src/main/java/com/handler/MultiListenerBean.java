@@ -11,5 +11,6 @@ public class MultiListenerBean {
     @KafkaHandler
     public void listen(String foo) {
         System.out.println(foo);
+        throw new RuntimeException("1111");
     }
 }
